@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   // TODO hit the live URL
-  d3.json("https://developer.mozilla.org/en-US/docs/JavaScript$children", function(json) {
+  d3.json("data/JavaScript.json", function(json) {
     root = json;
     //console.log('root', root);
 
@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if (d.subpages) {
       d._children = d.subpages;
       d.subpages = null;
+      d.children = null;
     } else {
       d.subpages = d._children;
       d._children = null;
