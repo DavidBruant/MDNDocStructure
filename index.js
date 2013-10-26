@@ -6,3 +6,5 @@ var connect = require('connect'),
 connect()
   .use(connect.static(__dirname))
   .listen(2121);
+
+console.log("You can now connect to http://localhost:2121/")

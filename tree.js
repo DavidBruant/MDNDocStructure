@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   // TODO hit the live URL
-  d3.json("data/JavaScript.json", function(json) {
+  d3.json("https://developer.mozilla.org/en-US/docs/Web$children"/*"data/JavaScript.json"*/, function(json) {
     root = json;
     //console.log('root', root);
 
